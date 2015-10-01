@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>LiaW</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/octicons.css" rel="stylesheet">
+</head>
+
+<body class="base06-background">
+  <div id="canvasDiv">
+    <canvas id="background" height="640px" width="640px" z-index="-1">
+    </canvas>
+    <canvas id="drawing" height="640px" width="640px" z-index="0">
+    </canvas>
+    <canvas id="tempDrawing" height="640px" width="640px" z-index="1">
+    </canvas>
+    <canvas id="interface" height="640px" width="640px" z-index="2">
+    </canvas>
+    <div class="base06-background">
+      <div class="leftButton">
+        <span class="mega-octicon octicon-pencil base00"></span>
+      </div>
+      <div class="leftButton">
+        <span class="mega-octicon octicon-x base04"></span>
+      </div>
+      <div class="leftButton"></div>
+      <div class="leftButton"></div>
+      <div class="leftButton"></div>
+      <div class="leftButton"></div>
+      <div class="leftButton"></div>
+      <div class="leftButton">
+        <span class="mega-octicon octicon-chevron-left base0D"></span>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
