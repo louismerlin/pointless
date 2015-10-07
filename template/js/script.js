@@ -6,7 +6,8 @@ var bgE = document.getElementById("background"),
   tdC = document.getElementById("tempDrawing").getContext("2d"),
   interfaceE = document.getElementById("interface"),
   interfaceC = document.getElementById("interface").getContext("2d"),
-  selectedDot = null;
+  selectedDot = null,
+  image = [];
 
 //BACKGROUND
 
@@ -109,4 +110,14 @@ drawLine = function(dot) {
   drawingC.lineTo(dot.x * 20 + 10, dot.y * 20 + 10);
   drawingC.stroke();
   tdC.clearRect(0,0,640,640);
+  image.push({"x1": selectedDot.x, "y1": selectedDot.y, "x2": dot.x, "y2":dot.y});
+}
+
+importImage = function(im) {
+  console.log(im);
+}
+importImage(imageLine);
+
+undo = function() {
+  image.pop();
 }
