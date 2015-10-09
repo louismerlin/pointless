@@ -106,7 +106,7 @@ drawImage = function(im) {
 }
 
 importImage = function(im) {
-  console.log(im);
+  //console.log(im);
 }
 importImage(imageLine);
 
